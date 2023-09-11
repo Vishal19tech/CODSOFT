@@ -19,4 +19,11 @@ def pgen():
     password = (''.join(L[0:pass_length]))
     print(password)
 
+    again = input("DO YOU WANT TO CREATE ANOTHER PASSWORD, TYPE Y for YES and N for NO :")
+    if again == "Y" :
+        return pgen()
+    else:
+        print("I hope you like it!")
+
+
 pgen()
